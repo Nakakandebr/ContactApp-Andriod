@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ContatsList</string>
+    <string name="email_is_required">Email  is required</string>
+    <string name="password_is_required">" Password is required"</string>
+    <string name="phonenumber_is_required">" phonenumber  is required"</string>
+    <string name="contact_saved" />
+    <string name="name_required">Name required</string>
+    <string name="phone_number_required">" phone number required"</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="delete">Delete</string>
 </resources>
