@@ -12,6 +12,7 @@ import com.assignment.contatslist.databinding.AddListItemBinding
 import com.assignment.contatslist.model.ContactData
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
+import java.io.File
 
 class ContactsAdapter( val contactList: List<ContactData>, val context: Context) : RecyclerView.Adapter<ContactViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
@@ -30,7 +31,8 @@ class ContactsAdapter( val contactList: List<ContactData>, val context: Context)
         if (currentContact.avatar.isNotBlank()) {
             Picasso
                 .get()
-                .load(currentContact.avatar)
+                .load(
+                    File(currentContact.avatar))
                 .resize(80, 80)
                 .centerCrop()
                 .transform(CropCircleTransformation())
